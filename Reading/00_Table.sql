@@ -1,0 +1,5 @@
+CREATE TABLE squema.name_table(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(40),
+ETC..
+);
