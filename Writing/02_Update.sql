@@ -1,5 +1,16 @@
--- Siempre usar update con where o de lo contrario habrá un error fatal
-UPDATE users SET age = '21' WHERE age = '26';
+UPDATE table_name
+SET column = '?'
+WHERE column 1 = '?'
 
--- También si se quiere cambiar 2 campos   
-UPDATE users SET age = '14', birthdate = '2014-01-04' WHERE name = 'Carlos';
+/* Siempre se debe utilizar la combinación set y where en un update, where es la condición. 
+Si no la tiene entonces todos los datos de una tabla se actualizan*/
+
+UPDATE users 
+SET surname = 'Gómez'
+WHERE name = 'Savitar';
+
+-- ////////////////
+
+UPDATE users 
+SET surname = 'Lopez'
+WHERE id = '3';

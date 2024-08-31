@@ -1,1 +1,1 @@
-DROP DATABASE name;
+DROP DATABASE name; -- Elimina la base de datos
