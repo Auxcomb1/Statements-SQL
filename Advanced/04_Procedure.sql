@@ -1,0 +1,21 @@
+-- BÁSICO
+DELIMITER //
+CREATE PROCEDURE `Edad`()
+	BEGIN
+	SELECT * FROM users WHERE age >= 18;
+	END //
+
+DELIMITER ;
+
+CALL edad;
+
+-- PARAMETROS
+
+DELIMITER //
+CREATE PROCEDURE `People` (IN Name_param VARCHAR(10))
+	BEGIN
+		SELECT * FROM users WHERE Name = Name_param;
+	END //
+DELIMITER ;
+
+CALL People('Martín');
